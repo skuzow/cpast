@@ -1,7 +1,8 @@
 import sys
-from argparse import ArgumentParser
+from argparse import ArgumentParser, Namespace
 
-from cpast.cpast import run
+import cpast.check as check
+import cpast.cpast as cpast
 
 
 parser = ArgumentParser(prog='cpast', description='Cpast CLI')
@@ -15,9 +16,11 @@ parser.add_argument('-m', '--message',
                     help='Commit message, example: "init :)"',
                     required=True, type=str, default=None)
 
+
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         parser.print_help()
     else:
-        args = parser.parse_args()
-        run(args.date, args.time, args.message)
+        args: Namespace = parser.parse_args()
+        if (check.run(args.date, args.time)):
+            cpast.run(args.date, args.time, args.message)
