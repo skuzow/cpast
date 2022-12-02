@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from cpast.cpast import format_date, prepare_vars
+from cpast.core import format_date, prepare_vars
 
 
 DATE: str = '2021-12-25'

@@ -2,7 +2,7 @@ import sys
 from argparse import ArgumentParser, Namespace
 
 import cpast.check as check
-import cpast.cpast as cpast
+import cpast.core as core
 
 
 parser = ArgumentParser(prog='cpast', description='Cpast CLI')
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     else:
         args: Namespace = parser.parse_args()
         if (check.run(args.date, args.time)):
-            cpast.run(args.date, args.time, args.message)
+            core.run(args.date, args.time, args.message)
