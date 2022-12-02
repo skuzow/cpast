@@ -12,8 +12,7 @@ FORMATTED_DATE: str = '"2021-12-25T22:13:05"'
 class TestSimple(unittest.TestCase):
 
     def test_format_date(self):
-        formatted_date: str = format_date(DATE, TIME)
-        self.assertEqual(formatted_date, FORMATTED_DATE)
+        self.assertEqual(format_date(DATE, TIME), FORMATTED_DATE)
 
     def test_prepare_vars(self):
         prepare_vars(FORMATTED_DATE)
