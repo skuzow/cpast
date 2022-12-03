@@ -1,11 +1,11 @@
 [project]
 name = "cpast"
 version = "0.0.3"
-description = "Commit in the past"
+description = "Git commit in the past"
 readme = "README.md"
 requires-python = ">=3.7"
 # license = { file = "LICENSE" }
-keywords = [ "git", "commit", "setuptools", "development" ]
+keywords = [ "git", "commit", "command", "setuptools", "development" ]
 authors = [
   { name = "skuzow", email = "alex@skuzow.net" }
 ]
