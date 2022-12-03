@@ -6,12 +6,12 @@
 [![release](https://github.com/skuzow/cpast/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/skuzow/cpast/actions/workflows/release.yml)
 [![test](https://github.com/skuzow/cpast/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/skuzow/cpast/actions/workflows/test.yml)
 
-Commit in the past.
+Git commit in the past.
 
 ## 🗿 Usage
 
 ```bash
-  python -m cpast [-h] -d DATE -t TIME -m MESSAGE
+  python -m cpast -d DATE -t TIME -m MESSAGE
 ```
 
 - Date format: `YYYY-MM-DD`
