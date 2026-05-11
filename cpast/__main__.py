@@ -5,7 +5,7 @@ import cpast.check as check
 import cpast.core as core
 
 
-parser = ArgumentParser()
+parser = ArgumentParser(prog='cpast')
 parser.add_argument('-d', '--date',
                     help='Commit date, example: 2021-12-25',
                     required=True, type=str, default=None)
