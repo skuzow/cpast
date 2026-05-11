@@ -12,7 +12,7 @@ BROKEN_TIME: str = '-1:13:05'
 OVERPASSED_TIME: str = '24:13:05'
 
 
-class TestSimple(unittest.TestCase):
+class TestCheck(unittest.TestCase):
 
     def test_check_date(self):
         self.assertEqual(check_date(DATE), True)
