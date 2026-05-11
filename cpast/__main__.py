@@ -13,7 +13,7 @@ parser.add_argument('-t', '--time',
                     help='Commit time, example: 22:13:05',
                     required=True, type=str, default=None)
 parser.add_argument('-m', '--message',
-                    help='Commit message, example: "init :)"',
+                    help='Commit message, example: "in the past :)"',
                     required=True, type=str, default=None)
 
 

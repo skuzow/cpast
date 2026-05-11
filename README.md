@@ -19,10 +19,11 @@ Git commit in the past.
 
 ## ⚙️ Options
 
-- `-h, --help` Show help message and exit
-- `-d DATE, --date DATE` Commit date, example: 2021-12-25
-- `-t TIME, --time TIME` Commit time, example: 22:13:05
-- `-m MESSAGE, --message MESSAGE` Commit message, example: "init :)"
+| Flag            | Description                | Example            |
+|-----------------|----------------------------|--------------------|
+| `-d, --date`    | Commit date (`YYYY-MM-DD`) | `2021-12-25`       |
+| `-t, --time`    | Commit time (`HH:MM:SS`)   | `22:13:05`         |
+| `-m, --message` | Commit message             | `"in the past :)"` |
 
 ## 🧩 Install
 
