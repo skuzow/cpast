@@ -1,5 +1,10 @@
-name: test
-on: push
+name: 🧪 test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test:
@@ -8,21 +13,20 @@ jobs:
         python: ['3.11', '3.12', '3.13', '3.14']
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install uv
+      - uses: actions/checkout@v4
+      - name: install uv
         uses: astral-sh/setup-uv@v4
-      - name: Set up Python ${{ matrix.python }}
+      - name: set up Python ${{ matrix.python }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - name: Install dependencies
-        run: uv sync --frozen --group dev
-      - name: Build and verify distribution
+      - name: install dependencies
+        run: uv sync --frozen
+      - name: build
         run: uv build
-      - name: Twine check
+      - name: twine check
         run: uv run twine check dist/*
-      - name: Lint
+      - name: lint
         run: uv run flake8 cpast tests
-      - name: Test
+      - name: test
         run: uv run pytest tests

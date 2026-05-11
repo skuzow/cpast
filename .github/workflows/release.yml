@@ -1,24 +1,24 @@
-name: release
+name: 🚀 release
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  build-and-publish:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install uv
+      - uses: actions/checkout@v4
+      - name: install uv
         uses: astral-sh/setup-uv@v4
-      - name: Set up Python
+      - name: set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Build
+      - name: build
         run: uv build
-      - name: Publish
+      - name: publish
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.PYPI_TOKEN }}
