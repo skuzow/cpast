@@ -3,7 +3,7 @@
 [![python](https://img.shields.io/badge/python->=%203.11%20-blue)](https://www.python.org/downloads)
 [![pypi](https://img.shields.io/pypi/v/cpast)](https://pypi.org/project/cpast)
 [![license](https://img.shields.io/github/license/skuzow/cpast.svg)](https://github.com/skuzow/cpast/blob/main/LICENSE)
-[![release](https://github.com/skuzow/cpast/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/skuzow/cpast/actions/workflows/release.yml)
+[![release](https://github.com/skuzow/cpast/actions/workflows/release.yml/badge.svg)](https://github.com/skuzow/cpast/actions/workflows/release.yml)
 [![test](https://github.com/skuzow/cpast/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/skuzow/cpast/actions/workflows/test.yml)
 
 Git commit in the past.
