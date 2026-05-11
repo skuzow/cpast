@@ -83,3 +83,7 @@ Run the test suite:
 ```bash
 uv run pytest tests
 ```
+
+## 💫 Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=skuzow/cpast&max=500&columns=20)](https://github.com/skuzow/cpast/graphs/contributors)
