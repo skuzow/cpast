@@ -28,9 +28,14 @@ classifiers = [
 ]
 dependencies = [ ]
 
-[project.optional-dependencies]
-dev = [ ]
-test = [ ]
+[dependency-groups]
+dev = [
+  "check-manifest>=0.42",
+  "flake8",
+  "pytest",
+  "build",
+  "twine",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/skuzow/cpast"
@@ -39,6 +44,9 @@ test = [ ]
 
 [project.scripts]
 cpast = "cpast:main"
+
+[tool.uv]
+default-groups = ["dev"]
 
 [tool.setuptools]
 # package-data = { "cpast" = ["*.dat"] }

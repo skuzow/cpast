@@ -26,6 +26,64 @@ Git commit in the past.
 
 ## 🧩 Install
 
+### [uv](https://docs.astral.sh/uv)
+
+Global tool:
+
 ```bash
-  pip install cpast
+uv tool install cpast
+```
+
+Current project:
+
+```bash
+uv add cpast
+```
+
+### [pip](https://pip.pypa.io)
+
+Global tool:
+
+```bash
+pip install --user cpast
+```
+
+Current project:
+
+```bash
+pip install cpast
+```
+
+## 🚀 Development
+
+Install [uv](https://docs.astral.sh/uv/), then from the repository root:
+
+Install project + dev tools:
+
+```bash
+uv sync
+```
+
+Build the distribution artifacts:
+
+```bash
+uv build
+```
+
+Verify package metadata and README rendering:
+
+```bash
+uv run twine check dist/*
+```
+
+Lint the source and tests:
+
+```bash
+uv run flake8 cpast tests
+```
+
+Run the test suite:
+
+```bash
+uv run pytest tests
 ```
