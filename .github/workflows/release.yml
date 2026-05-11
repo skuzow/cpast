@@ -29,7 +29,7 @@ jobs:
       - name: build
         run: uv build
       - name: publish
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@v1.14.0
         with:
           password: ${{ secrets.PYPI_TOKEN }}
           skip-existing: true
