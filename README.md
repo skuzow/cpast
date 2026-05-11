@@ -11,13 +11,8 @@ Git commit in the past.
 ## 🗿 Usage
 
 ```bash
-  python -m cpast -d DATE -t TIME -m MESSAGE
+python -m cpast -d DATE -t TIME -m MESSAGE
 ```
-
-- Date format: `YYYY-MM-DD`
-- Time format: `HH:MM:SS`
-
-## ⚙️ Options
 
 | Flag            | Description                | Example            |
 |-----------------|----------------------------|--------------------|
